@@ -13,3 +13,4 @@ github_username:  theonlylawislove
 # Build settings
 markdown: kramdown
 highlighter: true
+disqus_shortname: pknopf
