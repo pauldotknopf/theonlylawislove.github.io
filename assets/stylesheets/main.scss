@@ -1,0 +1,148 @@
+---
+---
+@charset "utf-8";
+
+$brand-primary: #2e8bcc;
+
+$navbar-default-color:                    black !default;
+$navbar-default-bg:                       white !default;
+$navbar-default-border:                   white !default;
+$navbar-default-link-color:               black !default;
+$navbar-default-link-hover-color:         black !default;
+$navbar-default-link-hover-bg:            transparent !default;
+$navbar-default-link-active-color:        black !default;
+$navbar-default-link-active-bg:           darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:      #ccc !default;
+$navbar-default-link-disabled-bg:         transparent !default;
+$navbar-default-brand-color:              white !default;
+$navbar-default-brand-hover-color:        white !default;
+$navbar-default-brand-hover-bg:           $brand-primary !default;
+$navbar-default-toggle-hover-bg:          transparent !default;
+$navbar-default-toggle-icon-bar-bg:       black !default;
+$navbar-default-toggle-border-color:      transparent !default;
+
+$navbar-inverse-color:                    white !default;
+$navbar-inverse-bg:                       black !default;
+$navbar-inverse-border:                   black !default;
+$navbar-inverse-link-color:               white !default;
+$navbar-inverse-link-hover-color:         white !default;
+$navbar-inverse-link-hover-bg:            transparent !default;
+$navbar-inverse-link-active-color:        white !default;
+$navbar-inverse-link-active-bg:           black !default;
+$navbar-inverse-link-disabled-color:      #ccc !default;
+$navbar-inverse-link-disabled-bg:         transparent !default;
+$navbar-inverse-brand-color:              white !default;
+$navbar-inverse-brand-hover-color:        white !default;
+$navbar-inverse-brand-hover-bg:           $brand-primary !default;
+$navbar-inverse-toggle-hover-bg:          transparent !default;
+$navbar-inverse-toggle-icon-bar-bg:       white !default;
+$navbar-inverse-toggle-border-color:      transparent !default;
+
+@import "bootstrap";
+@import "fontawesome/font-awesome";
+
+.navbar-main
+{
+  @extend .navbar-default;
+  border-radius: 0px;
+  border-width: 0px;
+  .navbar-brand
+  {
+    background-color: $navbar-default-brand-hover-bg;
+  }
+}
+
+body.page, body.post {
+  .navbar-main {
+    @extend .navbar-inverse
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+
+.post-list .post
+{
+  @include make-row();
+  visibility: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+  .post-meta
+  {
+    @include make-sm-column(12);
+    @include make-md-column(3);
+    @include make-lg-column(2);
+    margin-bottom: 10px;
+    text-align: center;
+    .day
+    {
+      font-size: 52px;
+      line-height: 52px;
+      display: block;
+      font-weight: 800;
+      color: $brand-primary;
+      font-family: "Montserrat", sans-serif;
+    }
+    .month-year
+    {
+      display: block;
+      color: black;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  .post-content
+  {
+    @include make-sm-column(12);
+    @include make-md-column(9);
+    @include make-lg-column(10);
+    .post-content-header-title
+    {
+      color: black;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 34px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+      a
+      {
+        color:black;
+      }
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }
+    }
+  }
+}
