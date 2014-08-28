@@ -2,4 +2,25 @@
 layout: default
 page-class: home
 ---
-{{ content }}
+<div class="banner">
+  <div class="container">
+      {% if page.title %}
+        <h1 class="banner-title"><span>{{page.title}}</span></h1>
+      {% endif %}
+      {% if page.sub-title %}
+        <h2 class="banner-sub-title">{{page.sub-title}}</h2>
+      {% endif %}
+  </div>
+</div>
+<div class="container">
+
+  <div>
+  </div>
+
+  {{ content }}
+
+  <hr>
+
+  {% include footer.html %}
+
+</div>
