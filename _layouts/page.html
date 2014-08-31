@@ -2,8 +2,19 @@
 layout: default
 page-class: page
 ---
+
+{% if page.title %}
+
+<div class="page-header">
+	<div class="container">
+		<h1 class="page-header-title">{{page.title}}</h1>
+	</div>
+</div>
+
+{% endif %}
+
 <div class="container">
 
-  {{ content }}
+	{{ content }}
 
 </div>
