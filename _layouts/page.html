@@ -5,9 +5,9 @@ page-class: page
 
 {% if page.title %}
 
-<div class="page-header">
+<div class="site-title">
 	<div class="container">
-		<h1 class="page-header-title">{{page.title}}</h1>
+		<h1 class="title">{{page.title}}</h1>
 	</div>
 </div>
 
@@ -15,8 +15,6 @@ page-class: page
 
 <div class="container">
 	<article class="page-content">
-		<div>
-			{{ content }}
-		</div>
+		{{ content }}
 	</article>
 </div>
