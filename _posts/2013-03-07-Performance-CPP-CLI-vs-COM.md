@@ -3,6 +3,7 @@ layout: post
 title:  "Performance: C++/CLI vs COM"
 date:   2013-03-07
 categories: development
+tags: [sample post, readability]
 disqus-identifier: post-1053
 ---
 In my current project, we are going to require a great deal of native code due to interation with drivers and hardware. The application is going to be based in .NET, at least the UI portion, but the heart has to live in native C++.
@@ -28,6 +29,7 @@ public:
 };
 
 {% endhighlight %}
+
 There are duplications of this class but they all do the same thing. The method we are testing is a simple GetVersionEx from the WinAPI.
 
 {% highlight c++ %}
