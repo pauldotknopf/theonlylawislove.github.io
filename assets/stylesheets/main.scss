@@ -3,7 +3,9 @@
 @charset "utf-8";
 
 /* overiding some bootstrap variables */
+
 $brand-primary: #2e8bcc;
+
 $navbar-default-color:                    black !default;
 $navbar-default-bg:                       white !default;
 $navbar-default-border:                   white !default;
@@ -36,6 +38,15 @@ $navbar-inverse-brand-hover-bg:           $brand-primary !default;
 $navbar-inverse-toggle-hover-bg:          transparent !default;
 $navbar-inverse-toggle-icon-bar-bg:       white !default;
 $navbar-inverse-toggle-border-color:      transparent !default;
+
+$headings-font-family: "Montserrat", sans-serif;
+
+$font-family-base: "Open Sans", sans-serif;
+
+$text-color: #222;
+
+$blockquote-font-size: 26px;
+$blockquote-border-color: #ddd;
 
 /* frameworks */
 
@@ -74,8 +85,25 @@ $navbar-inverse-toggle-border-color:      transparent !default;
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif; }
+/* general */
+
+blockquote {
+  color: #6f6f6f; }
+
+// TODO: Style the scroll bar to be easier to use
+// ::-webkit-scrollbar {
+//     width: 50px;
+//     height: 50px;
+// }
+// ::-webkit-scrollbar-button {
+//     background: #ccc;
+// }
+// ::-webkit-scrollbar-track-piece {
+//     background: #888;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: #eee;
+// }​
 
 /* navbar */
 
@@ -250,6 +278,31 @@ body.page, body.post {
         margin-bottom: 5px; }
       @media (min-width: $screen-sm-min) {
         text-align: left; } } } }
+
+/* page */
+
+.page-content{
+  font-size: 18px;
+  margin-bottom: 80px;
+  > div > p:first-child {
+      font-size: 22px;
+      font-weight: 300;
+      @media (min-width: $screen-sm-min) {
+        font-size: 26px; } }
+  p, blockquote {
+    margin: 0 0 52px; }
+  p.has-image{
+      text-align: center;
+      padding-top: 18px;
+      padding-bottom: 18px; }
+  ul, ol {
+    margin-bottom: 20px; }
+  h1, .h1 { font-size: 245%; font-weight: bold; }
+  h2, .h2 { font-size: 205%; font-weight: bold; }
+  h3, .h3 { font-size: 150%; font-weight: bold; }
+  h4, .h4 { font-size: 130%; font-weight: bold; }
+  h5, .h5 { font-size: 100%; font-weight: bold; }
+  h6, .h6 { font-size: 90%;  font-weight: bold; } } 
 
 /* footer */
 

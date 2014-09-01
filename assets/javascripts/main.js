@@ -20,6 +20,7 @@ var summer = (function ($) {
         $(window).on('scroll', function() {
             postAnimate();
         });
+        $('p:has(> img)').addClass('with-image');
     };
 
     return {
