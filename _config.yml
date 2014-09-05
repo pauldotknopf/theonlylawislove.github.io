@@ -1,13 +1,21 @@
 # Site settings
 title: pknopf
 email: theonlylawislove@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  A personal blog about technology and software development.
 baseurl: ""
 url: "http://www.pknopf.com" # the base hostname & protocol for your site
 
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
 
 # Build settings
 markdown: kramdown
