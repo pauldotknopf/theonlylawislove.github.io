@@ -405,6 +405,37 @@ body.page, body.post {
   }
 }
 
+/* contact form */
+.contact-form {
+ 
+  .contact-form-email {
+    @extend .form-group;
+    input {
+      @extend .form-control;
+      @extend .input-lg;
+    }
+  }
+  .contact-form-title {
+    @extend .form-group;
+    input {
+      @extend .form-control;
+      @extend .input-lg;
+    }
+  }
+  .contact-form-message {
+    @extend .form-group;
+    textarea {
+      @extend .form-control;
+      @extend .input-lg;
+    }
+  }
+  .contact-form-submit {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-lg;
+  }
+}
+
 /* footer */
 
 .footer{
