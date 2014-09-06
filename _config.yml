@@ -26,3 +26,6 @@ owner:
   name:           Paul Knopf
   twitter_username: theonlylawislov
   github_username:  theonlylawislove
+
+gems:
+  - jekyll-redirect-from

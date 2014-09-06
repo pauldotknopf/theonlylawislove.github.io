@@ -5,6 +5,8 @@ date:   2012-07-28
 categories: development
 tags: [sample post]
 disqus-identifier: post-27
+redirect_from: "/blog/twitter-bootstrap-clientside-validation-with-jquery-validation-js"
+
 ---
 Twitter Bootstrap is a great css/html/js framework, but sometimes it is difficult to ensure other plugins generate html that conform to the markup that Twitter Bootstrap works best with.
 

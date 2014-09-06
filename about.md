@@ -2,6 +2,7 @@
 layout: page
 title: Hi, my name is Paul Knopf
 permalink: /about/
+redirect_from: "/contact"
 ---
 
 I am a software developer working in the Tampa FL area. Feel free to contact me about anything interesting. Please, no spam!
