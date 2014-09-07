@@ -19,7 +19,7 @@ For example, Twitter Bootstrap has support for error stying at a field level, wh
 3. Add the "has-error" class to any errors that were rendered on page load. It is nice to have client side validation stying but what about when the page gets rendered with an error? For example, without EnableClientsideValidation in MVC, error messages will only get rendered after a post back. This would cause errors to not appear as errors until you modify the field so that the client side magic can do its work.
 
 ##The end result
-<p><iframe src="http://jsfiddle.net/theonlylawislove/9eLFu/2/embedded/result" width="100%" height="320"></iframe></p>
+<p><iframe src="http://www.pknopf.com/TwitterBootstrapjQueryValidate/embedded.htm" width="100%" height="320"></iframe></p>
 
 ##Download
-I put a [sample project up on GitHub](https://github.com/theonlylawislove/TwitterBootstrapjQueryValidate) to demo the script (the fiddle above is using scripts hosted on github). Here is a link to [the only script file that you will need](https://github.com/theonlylawislove/TwitterBootstrapjQueryValidate/blob/master/Content/Scripts/jquery.validate.bootstrap.js).</p>
+I put a [sample project](http://www.pknopf.com/TwitterBootstrapjQueryValidate/) to demo the script. Here is a link to [the only script file that you will need](http://www.pknopf.com/TwitterBootstrapjQueryValidate/Scripts/jquery.validate.bootstrap.js).</p>
