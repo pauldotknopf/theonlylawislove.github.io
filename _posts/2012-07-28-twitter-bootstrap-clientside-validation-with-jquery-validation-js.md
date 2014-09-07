@@ -22,4 +22,5 @@ For example, Twitter Bootstrap has support for error stying at a field level, wh
 <p><iframe src="http://www.pknopf.com/TwitterBootstrapjQueryValidate/embedded.htm" width="100%" height="250" style="border: 0;"></iframe></p>
 
 ##Download
-I put a [sample project](http://www.pknopf.com/TwitterBootstrapjQueryValidate/) to demo the script. Here is a link to [the only script file that you will need](http://www.pknopf.com/TwitterBootstrapjQueryValidate/Scripts/jquery.validate.bootstrap.js).</p>
+
+I put a [sample project](http://www.pknopf.com/TwitterBootstrapjQueryValidate/) to demo the script. Here is a link to [the only script file that you will need](http://www.pknopf.com/TwitterBootstrapjQueryValidate/Scripts/jquery.validate.bootstrap.js).
